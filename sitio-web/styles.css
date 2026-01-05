@@ -78,10 +78,6 @@ body {
     align-items: flex-start;
     line-height: 1;
 }
-.logo-container {
-    margin-left: 40px;
-}
-
 
 
 .logo-subtitle {
@@ -455,6 +451,28 @@ body {
 .placeholder-text {
     font-size: 18px;
     color: var(--text-gray);
+}
+
+
+.hidden {
+  display: none;
+}
+
+.portfolio-btn {
+  margin: 40px auto;
+  display: block;
+  padding: 14px 36px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-btn:hover {
+  background-color: #333;
 }
 
 /* ==================== SECCIÓN SERVICIOS ==================== */
@@ -1251,6 +1269,26 @@ body {
     .nosotros-cta {
         padding: 50px 20px;
     }
+}
+
+/* ==================== TESTIMONIOS ==================== */
+.testimonios {
+  padding: 80px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.testimonio {
+  max-width: 600px;
+  margin: 30px auto;
+  font-style: italic;
+}
+
+.testimonio span {
+  display: block;
+  margin-top: 10px;
+  color: #aaa;
 }
 
 /* ==================== SECCIÓN CONTACTO ==================== */

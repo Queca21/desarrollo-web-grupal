@@ -151,3 +151,37 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+/* ==================== GALERIA==================== */
+var btnPortfolio = document.getElementById('btnPortfolio');
+var portfolioGrid = document.getElementById('portfolioGrid');
+var sections = document.querySelectorAll('.section-page');
+var navLinks = document.querySelectorAll('.nav-link');
+
+if (btnPortfolio && portfolioGrid) {
+  // Mostrar portafolio completo
+  btnPortfolio.addEventListener('click', function () {
+    portfolioGrid.classList.remove('hidden');
+    btnPortfolio.style.display = 'none';
+  });
+}
+
+// Función para resetear galería
+function resetGaleria() {
+  if (portfolioGrid && btnPortfolio) {
+    portfolioGrid.classList.add('hidden');
+    btnPortfolio.style.display = 'block';
+  }
+}
+
+// Detectar cambio de sección por menú
+for (var i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener('click', function () {
+    var targetSection = this.getAttribute('data-section');
+
+    // Si salimos de galería, resetearla
+    if (targetSection !== 'galeria') {
+      resetGaleria();
+    }
+  });
+}

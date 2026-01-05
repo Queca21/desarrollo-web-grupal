@@ -315,11 +315,41 @@
                     </div>
                 </div>
 
-                <div class="cta-container">
-                    <a href="#portafolio" class="cta-button">VER TODO EL PORTAFOLIO</a>
-                </div>
+                <button id="btnPortfolio" class="cta-button">VER TODO EL PORTAFOLIO</button>
+
             </div>
         </div>
+
+
+<section id="portfolioGrid" class="portfolio-grid hidden">
+  <div class="portfolio-container">
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+    <div class="portfolio-item"></div>
+  </div>
+</section>
+
     </section>
 
     <!-- SECCIÓN 4: NOSOTROS -->
@@ -420,6 +450,20 @@
                         </div>
                     </div>
                 </div>
+                <section id="testimonios" class="testimonios">
+  <h2>Lo que dicen nuestros clientes</h2>
+
+  <div class="testimonio">
+    <p>“Las fotos fueron increíbles, captaron cada emoción.”</p>
+    <span>— María & Juan</span>
+  </div>
+
+  <div class="testimonio">
+    <p>“Profesionalismo y calidad en cada imagen.”</p>
+    <span>— Andrea López</span>
+  </div>
+</section>
+
 
                 <!-- CTA Final -->
                 <div class="nosotros-cta">
@@ -430,6 +474,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- SECCIÓN 5: CONTACTO -->
     <section id="contacto" class="section-page">
@@ -518,7 +563,7 @@
                     <!-- Columna 2: Formulario de Contacto -->
                     <div class="contacto-form-container">
                         <h2 class="form-title">Envíanos un Mensaje</h2>
-                        <form class="contacto-form" id="contactForm">
+                        <form class="contacto-form" action ="https://formspree.io/f/mgovqqzz" method="POST">
                             <div class="form-group">
                                 <input type="text" name="nombre" placeholder="Tu Nombre" required>
                             </div>
